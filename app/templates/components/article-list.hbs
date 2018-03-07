@@ -1,0 +1,8 @@
+<div>{{yield}}</div>
+<div>{{title}}</div>
+
+<ul>
+  {{#each articles as |article|}}
+    {{article-item article=article}}
+  {{/each}}
+</ul>
