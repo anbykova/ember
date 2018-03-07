@@ -1,4 +1,7 @@
-<li {{action "showDescription" article}}>
-  <div>{{article.title}}</div>
-  <div>{{if article.descriptionAvailable article.description}}</div>
-</li>
+<div class="article">
+  <button {{action "showDescription" article}} class="article-show_foreight">Show Description</button>
+  {{#link-to "main.article-details" article.id class="article-show_all"}}View All Information{{/link-to}}
+  <div class="article-title">{{article.title}}</div>
+  <div class="article-desciption">{{if article.descriptionAvailable article.description}}</div>
+  <div class="article--end"></div>
+</div>

@@ -1,8 +1,7 @@
-<div>{{yield}}</div>
-<div>{{title}}</div>
+<h2>{{yield}}</h2>
 
-<ul>
+<div>
   {{#each articles as |article|}}
     {{article-item article=article}}
   {{/each}}
-</ul>
+</div>
