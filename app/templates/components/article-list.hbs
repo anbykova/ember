@@ -1,7 +1,11 @@
 <h2>{{yield}}</h2>
+<div>
+  <label for="showNew">Show only new</label>
+  {{input type="checkbox" id="showNew" checked=isShowingNew}}
+</div>
 
 <div>
-  {{#each articles as |article|}}
+  {{#each showingArticles as |article|}}
     {{article-item article=article}}
   {{/each}}
 </div>

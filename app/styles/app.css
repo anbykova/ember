@@ -79,6 +79,10 @@ ul {
     margin: 0 10px;
   }
 
+  .article-created_date {
+    float: right;
+  }
+
 nav {
   background-color: #B9B1E0;
 }
